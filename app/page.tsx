@@ -22,7 +22,7 @@ export default function Home() {
       2
     )
   );
-
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [parsedConfig, setParsedConfig] = useState<any>(null);
   const [error, setError] = useState<string | null>(null);
   const [fileUploadError, setFileUploadError] = useState<RejectedFile[]>([]);
