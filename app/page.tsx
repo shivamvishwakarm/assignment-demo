@@ -11,6 +11,7 @@ export default function Home() {
         label: "Upload your documents",
         accept: ["image/png", "image/jpeg"],
         maxSizeMB: 2,
+        showList: true,
         theme: {
           radius: "md",
           size: "sm",
@@ -41,7 +42,7 @@ export default function Home() {
   };
 
   return (
-    <div className=" p-8 w-full h-screen space-y-6 flex flex-row gap-10">
+    <div className=" md:p-8 p-2 w-screen h-screen space-y-6 flex md:flex-row md:gap-10  flex-col">
       <div className="w-full">
         <h1 className="text-2xl font-bold">File Upload Config Editor</h1>
 
