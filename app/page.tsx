@@ -3,6 +3,7 @@ import { FileUpload, RejectedFile } from "file-upload-library"
 import { useState } from "react";
 
 export default function Home() {
+
   const [jsonInput, setJsonInput] = useState<string>(
     JSON.stringify(
       {
@@ -23,8 +24,11 @@ export default function Home() {
       2
     )
   );
+
+  const initialConfig = JSON.parse(jsonInput);
+
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const [parsedConfig, setParsedConfig] = useState<any>(null);
+  const [parsedConfig, setParsedConfig] = useState<any>(initialConfig);
   const [error, setError] = useState<string | null>(null);
   const [fileUploadError, setFileUploadError] = useState<RejectedFile[]>([]);
 
