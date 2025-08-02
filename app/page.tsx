@@ -34,7 +34,8 @@ export default function Home() {
       const parsed = JSON.parse(json);
       setParsedConfig(parsed);
       setError(null);
-    } catch (err) {
+    } catch (err: unknown) {
+      console.error(err);
       setError("Invalid JSON");
     }
   };
