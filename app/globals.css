@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@source "../node_modules/file-upload-library";
+
+
 
 :root {
   --background: #ffffff;
@@ -14,7 +17,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #262424;
     --foreground: #ededed;
   }
 }
